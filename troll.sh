@@ -83,9 +83,9 @@ mulai (){
     echo
     read lagi
     if [ $lagi = "y" ]; then
-        spam
+            spam
     else
-        echo "Terimakasih sudah menggunakan Troll project"
+            echo "Terimakasih sudah menggunakan Troll project"
     fi
 }
 #spam
@@ -100,13 +100,13 @@ spam(){
     echo "1/2/3?"
     read pilih
     if [ $pilih = "1" ]; then
-        echo "Troll Spam SMS"
-        #function spam
-        echo
+            echo "Troll Spam SMS"
+            #function spam
+            echo
             echo "Silahkan masukan nomor telp target"
             echo contoh 0812345678
-           read target # masukin no telp
-           echo
+            read target # masukin no telp
+            echo
             echo "Berapa sms yang mau dikirim?"
             read paket
             echo
@@ -115,10 +115,10 @@ spam(){
             read confirm
             echo
             if [ $confirm = "y" ]; then
-                load
-                clear
-                echo Melakukan spam SMS ke nomor $target
-                echo
+                    load
+                    clear
+                    echo Melakukan spam SMS ke nomor $target
+                    echo
                     echo "Jangan close aplikasi sebelum spam selesai"            
                     echo "========================================"
                     target_do=$get_sms'/sms.php?nomor='$target'&paket='$paket
@@ -129,37 +129,37 @@ spam(){
                     echo " -zLucifer"
                     echo "======================================="
             else
-                echo "Kesalahan"
+                    echo "Kesalahan"
             fi
         mulai
     elif [ $pilih = "2" ]; then
-        echo "Troll Spam Call"
-        #function spam
-        echo
-        echo "Silahkan masukan nomor telp target"
+            echo "Troll Spam Call"
+            #function spam
+            echo
+            echo "Silahkan masukan nomor telp target"
             echo contoh 0812345678
-        read target # masukin no telp
+            read target # masukin no telp
             echo
             echo Apakah nomor $target "sudah benar?"
             echo y/n?
             read confirm
             echo
             if [ $confirm = "y" ]; then
-            load
-            clear
-                echo Melakukan spam call ke nomor $target
-            echo
-            echo "Jangan close aplikasi sebelum spam selesai"
-            echo "========================================"
-                cek_target=`curl -s $get_call/call.php?nomor=$target`
-                echo -e $cek_target
-            echo " Gunakan tools dengan bijak"
-            echo
-            echo " Love u always "
-            echo " -zLucifer"
-            echo "========================================"
-            else
-                echo Kesalahan, silahkan coba lagi
+                  load
+                  clear
+                  echo Melakukan spam call ke nomor $target
+                  echo
+                  echo "Jangan close aplikasi sebelum spam selesai"
+                  echo "========================================"
+                  cek_target=`curl -s $get_call/call.php?nomor=$target`
+                  echo -e $cek_target
+                  echo " Gunakan tools dengan bijak"
+                  echo
+                  echo " Love u always "
+                  echo " -zLucifer"
+                  echo "========================================"
+                  else
+                  echo Kesalahan, silahkan coba lagi
             fi
         mulai
     elif [ $pilih = "3" ]; then
@@ -192,7 +192,7 @@ echo "Mulai troll project?"
 echo "y/n?"
 read mulai
 if [ $mulai = "y" ]; then
-    spam
+      spam
 else
-    close
+      close
 fi
