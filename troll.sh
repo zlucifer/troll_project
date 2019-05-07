@@ -121,7 +121,7 @@ spam(){
                     clear
                     echo Melakukan spam SMS ke nomor $target
                     echo
-                    echo "Jangan close aplikasi sebelum spam selesai"            
+                    echo "Jangan close aplikasi sebelum spam selesai"
                     echo "========================================"
                     target_do=$get_sms'/sms.php?nomor='$target'&paket='$paket
                     CURL_RESPONSE=`curl -s -o /dev/null -w "%{http_code}" $target_do`
@@ -142,7 +142,17 @@ spam(){
             echo contoh 0812345678
             read target # masukin no telp
             echo
-            echo Apakah nomor $target "sudah benar?"
+            echo "Gunakan API Grab/Toped?"
+            echo "[1] GRAB"
+            echo "[2] TOPED"
+            echo "1/2?"
+            read api
+            if [ $api = "1" ]; then
+                  api_spam="grab"
+            else
+                  api_spam="toped"
+            fi
+            echo Apakah nomor $target dan spam menggunakan $api_spam "sudah benar?"
             echo y/n?
             read confirm
             echo
@@ -153,14 +163,14 @@ spam(){
                   echo
                   echo "Jangan close aplikasi sebelum spam selesai"
                   echo "========================================"
-                  cek_target=`curl -s $get_call/call.php?nomor=$target`
+                  cek_target=`curl -s $get_call/call.php?nomor=$target"&method="$api_spam`
                   echo -e $cek_target
                   echo " Gunakan tools dengan bijak"
                   echo
                   echo " Love u always "
                   echo " -zLucifer"
                   echo "========================================"
-                  else
+            else
                   echo Kesalahan, silahkan coba lagi
             fi
         mulai
