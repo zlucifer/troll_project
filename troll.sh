@@ -80,10 +80,7 @@ load(){
 get_sms=$(curl -s http://zlucifer.com/api/sms.php)
 get_call=$(curl -s http://zlucifer.com/api/call.php)
 mulai (){
-    echo "Gunakan Troll Project Lagi?"
-    echo "y/n?"
-    echo
-    read lagi
+    read -p "Gunakan Troll Project Lagi? [y/n] " lagi
     if [ $lagi = "y" ]; then
             spam
     else
@@ -99,22 +96,20 @@ spam(){
     echo "[2] Spam Telp"
     echo "[3] Close Troll Project"
     echo
-    echo "1/2/3?"
-    read pilih
+    read -p "Select : " pilih
     if [ $pilih = "1" ]; then
             echo "Troll Spam SMS"
             #function spam
             echo
             echo "Silahkan masukan nomor telp target"
-            echo contoh 0812345678
-            read target # masukin no telp
+            echo"contoh 0812345678"
+            read -p "No HP : " target # masukin no telp
             echo
             echo "Berapa sms yang mau dikirim?"
-            read paket
+            read -p "Jumlah : " paket
             echo
             echo Apakah nomor $target "dan SMS dikirim "$paket" sudah benar?"
-            echo y/n?
-            read confirm
+            read -p "[y/n] ? " confirm
             echo
             if [ $confirm = "y" ]; then
                     load
