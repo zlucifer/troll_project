@@ -194,9 +194,6 @@ troll
 echo Selamat datang kak, Siapa nick kaka? #tulisan keluar
 read nick #membaca yang ditulis
 clear
-echo "Loading.."
-load
-clear
 troll
 echo Selamat datang $nick ":)"
 echo
