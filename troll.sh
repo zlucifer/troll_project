@@ -14,55 +14,55 @@
 #GUNAKAN TOOLS UNTUK KEBAIKAN JANGAN DISALAH GUNAKAN :)
 troll(){
     clear
-    sleep 0.03
+    sleep 0
     echo "         _ "
-    sleep 0.03
+    sleep 0
     echo "        /_)  _.-===-._ "
-    sleep 0.03
+    sleep 0
     echo "       /  .; '_-.'- .'.     _ "
-    sleep 0.03
+    sleep 0
     echo "  __ _/  /.'\ ._  '. , \   (_\ "
-    sleep 0.03
+    sleep 0
     echo " /\_( \  |.'.-._'- .  '|     \ "
-    sleep 0.03
+    sleep 0
     echo " |_)  /  |/'    ''--''\|     _\__ "
-    sleep 0.03
+    sleep 0
     echo " \_)_|  /'  ._.   ._.  '\   / )(_\ "
-    sleep 0.03
+    sleep 0
     echo " )/  (  \_      _      _/   \' (_| "
-    sleep 0.03
+    sleep 0
     echo " /   /    \           /     _) (_/ "
-    sleep 0.03
+    sleep 0
     echo " |   '',_ _'._'---'_.'_ _,.'    | \ "
-    sleep 0.03
+    sleep 0
     echo " \    /  \ \  '''''  / / /     /   \ "
-    sleep 0.03
+    sleep 0
     echo "  \_.'    \ \       / /  |   .' "
-    sleep 0.03
+    sleep 0
     echo "   '--.,   \ \     / /  _;-'' "
-    sleep 0.03
+    sleep 0
     echo "       '|   \ \   / /   | "
-    sleep 0.03
+    sleep 0
     echo "       .;----'''''''----;. "
-    sleep 0.03
+    sleep 0
     echo "      /(                 )\ "
-    sleep 0.03
+    sleep 0
     echo "      \_''-------------''_/ "
-    sleep 0.03
+    sleep 0
     echo "      | '';-----;-----;'' | "
-    sleep 0.03
+    sleep 0
     echo "      | / : \ / : \ / : \ | "
-    sleep 0.03
+    sleep 0
     echo "      |V.','.V.','.V.','.V| "
-    sleep 0.03
+    sleep 0
     echo "      \'./_\.;./_\.;./_\.'/ "
-    sleep 0.03
+    sleep 0
     echo "       ';..___________..;' "
-    sleep 0.03
+    sleep 0
     echo " ============================="
-    sleep 2
+    sleep 0
     echo " ==      Troll Project      =="
-    sleep 0.7
+    sleep 0
     echo " ============================="
 }
 load(){
