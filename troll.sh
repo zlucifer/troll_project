@@ -193,7 +193,6 @@ spam(){
                 echo
                 echo "Jangan close aplikasi sebelum spam selesai"
                 echo "========================================"
-                #cek_target=`curl -s $server/api_wa.php?nomor=$target"&paket="$paket`
                 cek_target=`curl -A "$zlucifer" -s $server/api_wa.php?nomor=$target"&paket="$paket`
                 echo -e $cek_target
                 echo " Gunakan tools dengan bijak"
